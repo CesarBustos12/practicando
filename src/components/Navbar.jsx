@@ -17,7 +17,7 @@ import React from 'react'
           <summary>Menu</summary>
           <ul className="bg-blue-700 border-2 border-black border-inherit px-1">
             <li><a className='menu-link' href='/login'>Iniciar sesion</a></li>
-            <li><a className='menu-link' href='#'>Nuestros juegos</a></li>
+            <li><a className='menu-link' href='/subir'>Subir archivos</a></li>
           </ul>
         </details>
       </li>

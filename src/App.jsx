@@ -9,8 +9,9 @@ import Nosotros from "./components/Nosotros";
 import Login from "./components/Login";
 import Contacto from "./components/Contacto";
 import Carrucel from "./components/Carrucel";
+import UploadFile from "./components/UploadFile";
 
-
+//este tipo de codigo no es sostenible
 function App() {
   return (
     <>
@@ -26,8 +27,7 @@ function App() {
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/login" element={<Login />} />
           <Route path="/contacto" element={<Contacto />} />
-
-//este es el efecto que agrega un estado dentro de cada accion que realicemos
+          <Route path="/subir" element={<UploadFile />} />
 
           useEffect(() { 
         console.log('useEfect')
