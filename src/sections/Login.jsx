@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Login = () => {
   return (
+    <div>
+      <Navbar />
     <div className="hero bg-slate-100 bg-base-100 min-h-screen">
   <div className="lg:flex-row-reverse">
     <div className="justify-center">
@@ -30,6 +33,7 @@ const Login = () => {
       </form>
     </div>
   </div>
+</div>
 </div>
   )
 }

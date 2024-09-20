@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Contacto = () => {
   return (
+    <div>
+    <Navbar />
     <section className="bg-gray-100 py-12">
     <div className="container mx-auto px-6">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Contactanos!</h2>
@@ -23,6 +26,7 @@ const Contacto = () => {
       </div>
     </div>
   </section>
+  </div>
   )
 }
 
