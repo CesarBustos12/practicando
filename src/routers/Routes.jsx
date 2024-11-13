@@ -5,12 +5,13 @@ import Nosotros from "../sections/Nosotros";
 import Contacto from "../sections/Contacto";
 import Login from "../sections/Login";
 import UploadFile from "../sections/UploadFile";
+import { LandingPage } from "../pages/LandingPage";
 
 const Routes = {
     path: "/",
     element: <MinimalLayout />,
     children: [
-        {path: "/", element: < HomePage/>},
+        {path: "/", element: < LandingPage/>},
         {path: "/nosotros", element: <Nosotros />},
         {path: "/contacto", element: <Contacto />},
         {path: "/login", element: <Login />},
