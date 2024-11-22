@@ -4,6 +4,7 @@ import Navbar from "../sections/Navbar";
 import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import React, { useState, useRef } from "react";
+import Code from "../assets/code.png";
 
 export const LandingPage = () => {
   const [activeCategory] = useState("General");
@@ -12,11 +13,7 @@ export const LandingPage = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
-  const categories = [
-    { id: "general", label: "Generales" },
-    { id: "privacy", label: "Privacidad" },
-    { id: "responsible-ai", label: "Respuestas" },
-  ];
+  const categories = [{ id: "general", label: "Generales" }];
 
   const questions = [
     {
@@ -42,18 +39,6 @@ export const LandingPage = () => {
       question: "Que es lo que hacemos con los datos sensibles?",
       answer:
         "GitHub Copilot has been trained on publicly available code from GitHub repositories.",
-    },
-    {
-      id: "q5",
-      question: 'Does GitHub Copilot "copy/paste"?',
-      answer:
-        "No, GitHub Copilot generates suggestions based on patterns it has learned, rather than copying code directly.",
-    },
-    {
-      id: "q6",
-      question: "Which plan includes GitHub Copilot Autofix?",
-      answer:
-        "GitHub Copilot Autofix is included in specific enterprise-level plans.",
     },
   ];
 
@@ -86,15 +71,15 @@ export const LandingPage = () => {
     <>
       <Navbar />
       <div className="bg-gradient-to-r from-slate-900 via-blue-600 to-slate-900 to-black min-h-screen flex flex-col items-center text-center text-white relative">
-        <div className="absolute inset-0 opacity-70 bg-gradient-to-b from-transparent to-black"></div>
+        <div className="absolute inset-0 opacity-70 bg-gradient-to-b from-transparent to-black" />
         <div className="z-10 max-w-2xl pt-20 flex flex-col items-center space-y-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <div className="p-[1px] bg-gradient-to-r from-blue-500 to-green-500 rounded-full inline-block">
-              <p className="bg-slate-900 text-sm py-1 px-3 rounded-full font-semibold text-white flex items-center space-x-2">
+            <div className="p-[1px] bg-gradient-to-br from-purple-600 to-blue-600 rounded-full inline-block">
+              <p className="bg-[#010409] text-sm py-1 px-3 rounded-full font-semibold text-white flex items-center space-x-2">
                 Pinetech Dev
               </p>
             </div>
@@ -104,7 +89,7 @@ export const LandingPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="mb-8 text-4xl font-bold leading-tight text-white md:text-6xl"
+            className="mb-8 font-bold text-white md:text-6xl"
           >
             El mundo se adapta porque tu código no lo haría?
           </motion.div>
@@ -116,7 +101,7 @@ export const LandingPage = () => {
           >
             <Button
               title="Demos Inicio y conozcamos! >"
-              classNames="bg-white text-black font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300"
+              classNames=" text-black font-bold py-3 px-8 rounded-lg shadow-lg"
             />
           </motion.div>
         </div>
@@ -129,6 +114,7 @@ export const LandingPage = () => {
             className="w-full max-w-4xl"
           >
             <img
+              src={Code}
               alt="Code Preview"
               className="rounded-lg w-full h-auto mx-auto"
             />
@@ -152,7 +138,7 @@ export const LandingPage = () => {
                 ease: "easeInOut",
               }}
             >
-              <p className="text-white font-black text-6xl mb-8">
+              <p className="text-white font-black text-4xl mb-8">
                 Enfoque en una tarea a la vez,
                 <span className="block">mas tareas menos enfoque!</span>
               </p>
@@ -170,20 +156,24 @@ export const LandingPage = () => {
               </Card>
 
               <Card className="h-96 bg-[#1A1E24] flex flex-col justify-between p-6">
-                <p className="text white">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-white-500 rounded-full mb-6"></div>
-                </p>
-                <p className="text-xl font-bold mt-4">
-                  <p>45%</p>
+                <div className="flex gap-8">
+                 <div className="p-[1px] bg-gradient-to-br from-blue-600 to-purple-600 rounded-full">
+                    <p className="bg-[#0D1117] py-6 px-6 rounded-full" />
+                 </div>
+                </div>
+                <h2 className="text-xl font-bold">
+                  <p className="text-3xl">45%</p>
                   Mas velocidad de codigo
-                </p>
+                </h2>
               </Card>
 
               <Card className="h-96 bg-[#1A1E24] flex flex-col justify-between p-6">
                 <div className="flex gap-8">
-                  <div className="w-8 h-6 bg-blue-400 rounded-full" />
-                  <div className="w-6 h-6 bg-gray-500 rounded-full" />
-                  <div className="w-6 h-6 bg-gray-600 rounded-full" />
+                  <div className="p-[1px] bg-gradient-to-br from-blue-600 to-purple-600 rounded-full">
+                    <p className="bg-[#0D1117] py-6 px-6 rounded-full" />
+                  </div>
+                  <div className="w-10 h-10 bg-gray-500 rounded-full" />
+                  <div className="w-10 h-10 bg-gray-500 rounded-full" />
                 </div>
                 <h3 className="text-xl font-bold mt-4">
                   Diseñado para que todos los desarrolladores lo puedan
@@ -193,8 +183,7 @@ export const LandingPage = () => {
 
               <Card className="h-96 bg-gradient-to-br from-blue-600 to-purple-600 flex flex-col justify-between">
                 <h2 className="text-3xl font-bold mb-4">
-                  Los estandares de seguridad son importantes durante el
-                  desarrollo
+                  Los estandares
                 </h2>
                 <Link href="#" className="gap-2 text-sm mt-4 flex items-center">
                   Visita los estándares de seguridad
@@ -319,9 +308,6 @@ export const LandingPage = () => {
                     De nuestros desarrolladores se ha adaptado al ritmo
                   </p>
                 </div>
-                <p className="text-sm text-gray-500 mt-4">
-                  Pintech 2024 estadistica
-                </p>
               </Card>
             </motion.div>
 
@@ -371,7 +357,7 @@ export const LandingPage = () => {
                 Desarrollo
               </p>
             </div>
-            <h2 className="text-white font-black text-6xl mb-10">
+            <h2 className="text-white font-black text-4xl mb-10">
               Al tener varias herramientas en concreto podemos desarrollar mas
               agilmente
             </h2>
@@ -614,17 +600,18 @@ export const LandingPage = () => {
             <div className="lg:col-span-1">
               <nav className="space-y-2">
                 {categories.map((category) => (
-                  <button
+                  <Button
                     key={category.id}
                     onClick={() => category.label}
-                    className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                    title="Generales"
+                    classNames={`text-left ${
                       activeCategory === category.label
-                        ? "bg-[#2D333B] text-white"
+                        ? "bg-inherit"
                         : "text-gray-400 hover:text-white"
                     }`}
                   >
                     {category.label}
-                  </button>
+                  </Button>
                 ))}
               </nav>
             </div>
