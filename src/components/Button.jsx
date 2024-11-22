@@ -8,7 +8,7 @@ function Button ({
     <button
       onClick={(e) => onClick(e)}
       type={type}
-      className={`bg-blue-500 text-black px-6 py-2 rounded-lg ${classNames}`}
+      className={`bg-inherit text-black px-6 py-2 rounded-lg ${classNames}`}
     >
       {title}
     </button>
