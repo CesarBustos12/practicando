@@ -1,39 +1,64 @@
 import React from 'react'
-
+import { Facebook, Github, Linkedin, Twitch, Twitter, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 function Footer  ()  {
   return (
-    <footer className="footer bg-blue-700 border-2 border-black text-base-content p-10 rounded-lg">
-  <nav>
-    <h6 className="footer-title text-black">Servicios</h6>
-    <a className="link link-hover">Diseño</a>
-    <a className="link link-hover">Soluciones</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title text-black">Compañia</h6>
-    <a className="link link-hover">Sobre Nosotros</a>
-    <a className="link link-hover">Contacto</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title text-black">Legal</h6>
-    <a className="link link-hover">Terminos de uso</a>
-    <a className="link link-hover">Politica de privacidad</a>
-  </nav>
-  <form>
-    <h6 className="footer-title text-black">Recibe Novedades</h6>
-    <fieldset className="form-control w-80">
-      <label className="label">
-        <span className="label-text">Ingresa tu email</span>
-      </label>
-      <div className="join">
-        <input
-          type="text"
-          placeholder="username@site.com"
-          className="input input-bordered join-item border-2 border-black" />
-        <button className="btn btn-primary border-2 border-black join-item">Subscribete</button>
+    <footer className="bg-[#0D1117] border-t border-[#21262D] py-6 px-4">
+    <div className="container mx-auto">
+      <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+          <span className="text-sm text-[#7D8590]">© 2024 Pine, Inc.</span>
+          <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            <Link href="#" className="text-sm text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+              Terms
+            </Link>
+            <Link href="#" className="text-sm text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+              Privacy
+            </Link>
+            <Link href="#" className="text-sm text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+              Sitemap
+            </Link>
+            <Link href="#" className="text-sm text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+              What is Pine?
+            </Link>
+            <Link href="#" className="text-sm text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+              Manage cookies
+            </Link>
+            <Link href="#" className="text-sm text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+              Do not share my personal information
+            </Link>
+          </nav>
+        </div>
+        
+        <div className="flex items-center space-x-6">
+          <Link href="#" className="text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+            <Twitter className="h-5 w-5" />
+            <span className="sr-only">Twitter</span>
+          </Link>
+          <Link href="#" className="text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+            <Facebook className="h-5 w-5" />
+            <span className="sr-only">Facebook</span>
+          </Link>
+          <Link href="#" className="text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+            <Linkedin className="h-5 w-5" />
+            <span className="sr-only">LinkedIn</span>
+          </Link>
+          <Link href="#" className="text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+            <Youtube className="h-5 w-5" />
+            <span className="sr-only">YouTube</span>
+          </Link>
+          <Link href="#" className="text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+            <Twitch className="h-5 w-5" />
+            <span className="sr-only">Twitch</span>
+          </Link>
+          <Link href="#" className="text-[#7D8590] hover:text-[#A3A9B1] transition-colors">
+            <Github className="h-5 w-5" />
+            <span className="sr-only">GitHub</span>
+          </Link>
+        </div>
       </div>
-    </fieldset>
-  </form>
-</footer>
+    </div>
+  </footer>
   );
 }
 
