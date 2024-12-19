@@ -1,11 +1,20 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { DesingPage } from "../pages/DesingPage";
+import Logo from "../img/logo.png";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md shadow-md z-10">
+    <nav className="fixed w-full bg-transparent backdrop-blur-md shadow-md z-10 rounded-xl">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-white text-lg font-semibold">
-          <a href="#">Pinetech</a>
+          <img
+          src={Logo}
+          alt="icono"
+          className="w-14 h-14"
+          />
         </div>
 
         <button
@@ -34,32 +43,26 @@ const Navbar = () => {
           } md:flex space-x-8 text-sm text-white font-medium`}
         >
           <li>
-            <a className="hover:text-gray-300">
-              Productos
-            </a>
+            <Link to="/landingpage" className="hover:text-gray-300">
+              Landing Page
+            </Link>
           </li>
           <li>
-            <a className="hover:text-gray-300">
-              Soluciones
-            </a>
+            <Link to="/desing" className="hover:text-gray-300">
+              Dashboard
+            </Link>
           </li>
           <li>
-            <a className="hover:text-gray-300">
-              Recursos
-            </a>
+            <Link to="#" className="hover:text-gray-300">
+              Proyectos
+            </Link>
           </li>
           <li>
-            <a className="hover:text-gray-300">
-              Codigo Abierto
-            </a>
-          </li>
-          <li>
-            <a className="hover:text-gray-300">
-              Acerca de
-            </a>
+            <Link to="/pagina" className="hover:text-gray-300">
+              Pagina diseño
+            </Link>
           </li>
         </ul>
-
         <div className="flex items-center space-x-4"></div>
       </div>
     </nav>
