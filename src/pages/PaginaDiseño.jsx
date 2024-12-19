@@ -18,6 +18,7 @@ import TradingFee from "../components/TradingFee";
 export const PaginaDiseño = () => {
   const titleSection = "text-gray-700 font-medium";
   const textBold = "font-bold, text-black";
+  const moreText = "text-gray-700";
 
   return (
     <>
@@ -76,6 +77,7 @@ export const PaginaDiseño = () => {
 
             <div className="flex-1 grid gap-4">
               <div className={`flex justify-between items-center ${textBold}`}>
+                
                 <div className="flex items-center">
                   <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-r from-orange-200 to-orange-200">
                     <Bitcoin className="text-orange-400 " />
@@ -147,7 +149,7 @@ export const PaginaDiseño = () => {
             <div className="flex-grow">
               <div className="flex justify-between items-center mb-10">
                 <h2 className={titleSection}>WALLETS</h2>
-                <button className="text-gray-700">More →</button>
+                <button className={moreText}>More →</button>
               </div>
               <div className="flex gap-9">
                 <Card className="bg-gradient-to-br from-orange-400 to-yellow-300 shadow-lg shadow-orange-200 w-full">
@@ -212,7 +214,7 @@ export const PaginaDiseño = () => {
             <div className="lg:w-1/4">
               <div className="flex justify-between items-center mb-10">
                 <h2 className={titleSection}>TRADING FEES</h2>
-                <button className="text-gray-700">More →</button>
+                <button className={moreText}>More →</button>
               </div>
               <div className="space-y-8">
                 <TradingFee
@@ -239,7 +241,7 @@ export const PaginaDiseño = () => {
             <div>
               <div className="flex justify-between items-center mb-10">
                 <h2 className={titleSection}>TRANSACTIONS</h2>
-                <button className="text-gray-500">More →</button>
+                <button className={moreText}>More →</button>
               </div>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
@@ -281,7 +283,7 @@ export const PaginaDiseño = () => {
             <div>
               <div className="flex justify-between items-center mb-10">
                 <h2 className={titleSection}>SECURITY</h2>
-                <button className="text-gray-500">More →</button>
+                <button className={moreText}>More →</button>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Card className="bg-white rounded-xl shadow-lg">
