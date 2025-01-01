@@ -1,10 +1,10 @@
-import image from "../img/image.png";
-import icono1 from "../img/icon1.png";
-import icono2 from "../img/icono2.png";
-import icono3 from "../img/icono3.png";
-import icono4 from "../img/icono 4.png";
-import mapa from "../img/mapa.png";
-import first from "../img/first.png";
+import image from "../img/DesingLogos/image.png";
+import icono1 from "../img/DesingLogos/icon1.png";
+import icono2 from "../img/DesingLogos/icono2.png";
+import icono3 from "../img/DesingLogos/icono3.png";
+import icono4 from "../img/DesingLogos/icono 4.png";
+import mapa from "../img/DesingLogos/mapa.png";
+import first from "../img/DesingLogos/first.png";
 import {
   Building2,
   DollarSign,
