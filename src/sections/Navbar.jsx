@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { DesingPage } from "../pages/DesingPage";
-import Logo from "../img/logo.png";
+import Logo from "../img/MyLogo/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,11 +49,6 @@ const Navbar = () => {
           <li>
             <Link to="/desing" className="hover:text-gray-300">
               Dashboard
-            </Link>
-          </li>
-          <li>
-            <Link to="#" className="hover:text-gray-300">
-              Proyectos
             </Link>
           </li>
           <li>
