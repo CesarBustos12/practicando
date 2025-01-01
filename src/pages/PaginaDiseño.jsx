@@ -17,7 +17,7 @@ import TradingFee from "../components/TradingFee";
 
 export const PaginaDiseño = () => {
   const titleSection = "text-gray-700 font-medium";
-  const textBold = "font-bold, text-black";
+  const textBold = "font-bold text-black";
   const moreText = "text-gray-700";
 
   return (

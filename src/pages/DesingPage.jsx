@@ -96,13 +96,11 @@ export const DesingPage = () => {
                     </div>
 
                     <div className="flex gap-10 text-sm text-gray-400">
-                      
                       <div className="relative p-4 font-semibold">
                         Utilities
                         <span className="text-gray-900 font-bold p-4">
                           $ 6,250
                         </span>
-                        
                         <div className="relative mt-2 h-1 w-full bg-gray-300 rounded">
                           <div className="absolute h-full w-3/4 bg-green-500 rounded" />
                         </div>
@@ -120,7 +118,10 @@ export const DesingPage = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-20">
-                    <Link to="/" className="bg-indigo-600 font-bold text-white px-6 py-3 rounded-full ml-4">
+                    <Link
+                      to="/"
+                      className="bg-indigo-600 font-bold text-white px-6 py-3 rounded-full ml-4"
+                    >
                       <span>PAY ALL</span>
                       <span className="ml-10">{">"}</span>
                     </Link>
@@ -202,7 +203,9 @@ export const DesingPage = () => {
                       <div className="absolute top-0 left-0 h-full w-2/4 bg-indigo-600 rounded" />
                     </div>
                   </div>
-                  <button className="text-gray-400 pb-2 text-2xl">Organizations</button>
+                  <button className="text-gray-400 pb-2 text-2xl">
+                    Organizations
+                  </button>
                 </div>
 
                 <div className="overflow-x-auto">
@@ -351,7 +354,6 @@ export const DesingPage = () => {
                 </div>
               </div>
             </div>
-            
           </div>
         </main>
       </div>
